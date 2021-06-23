@@ -1,0 +1,13 @@
+.icon-bar {
+	font-family: 'Font Awesome 5 Brands';
+	font-size: 24px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	color: transparent;    
+	-webkit-background-clip: text;
+	margin: 0 -10px;
+	display: flex;
+
+	&__item {
+		margin: 0 10px;
+	}
+}

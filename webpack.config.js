@@ -46,7 +46,7 @@ module.exports = {
         new CopyWebpackPlugin({ 
             patterns: [
             { from: 'src/modules/**/img/*', to: 'img/[name][ext]' },
-            { from: 'src/icons/*', to: 'icons/[name][ext]' }
+            // { from: 'src/icons/*', to: 'icons/[name][ext]' }
             ]
         }),
         ...PAGES.map(page => new HtmlWebpackPlugin({
