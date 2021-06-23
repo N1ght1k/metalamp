@@ -1,0 +1,67 @@
+.menu-ext {
+	display: flex;
+	margin: 0 -20px;
+
+	&__link {
+		color: rgba(31, 32, 65, 0.5);
+		line-height: 17px;
+	}
+
+	&__list-item {
+		margin: 20px 0;
+		height: 18px;
+	}
+
+	&__column-header {
+		margin-top: 4px;
+		margin-bottom: 21px;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #1F2041;
+	}
+	
+	&__text {
+		margin-top: 20px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__corner-column {
+		width: 260px;
+		margin: 0 20px;
+	}
+
+	&__central-column {
+		width: 160px;
+		margin: 0 20px;
+	}
+}
+			
+
+// 	&__logo-text {
+// 		width: 260px;
+// 		margin: 0 20px;
+// 	}
+
+// 	&__nav {
+// 		width: 160px;
+// 		margin: 0 20px;
+// 	}
+
+// 	&__about {
+// 		width: 160px;
+// 		margin: 0 20px;
+// 	}
+
+// 	&__helpdesk {
+// 		width: 160px;
+// 		margin: 0 20px;
+// 	}
+
+// 	&__subscribe {
+// 		width: 260px;
+// 		margin: 0 20px;
+// 	}
+// }

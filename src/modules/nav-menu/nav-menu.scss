@@ -1,0 +1,45 @@
+.menu {
+
+	&__list {
+		display: flex;
+		align-items: center;
+		margin:0;
+		padding: 0;
+		text-indent: 0;
+		list-style-type: none;
+		margin: 0 -10px;
+	}
+
+	&__link {
+		text-decoration: none;	
+		color: rgba(31, 32, 65, 0.5);
+
+		&--bold {
+			text-decoration: none;	
+			color: rgba(31, 32, 65, 0.75);
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+		}
+	}
+
+	&__item {
+		
+		margin: 0 10px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.has-submenu {
+	display: flex;
+	// flex-wrap: wrap;
+
+	&::after {
+		font-family: 'Material Icons';
+		color: rgba(31, 32, 65, 0.5);
+		font-size: 24px;
+		content: "expand_more";
+		font-feature-settings: 'liga';
+	}
+}

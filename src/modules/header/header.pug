@@ -1,0 +1,21 @@
+include ../logo/logo
+include ../nav-menu/nav-menu
+include ../button/button
+
+mixin header(isAuthorised)
+	header.header__container
+		.header-content
+			.header-left
+				+logo
+			.header-right
+				.header__menu
+					+nav-menu
+				if (isAuthorised == true)
+					.user-info
+						span.user-info__text--vert-line Юлий Цезарь
+				else 
+					.header__buttons
+						.header__buttons--enter
+							+button("войти", "button-default", "#")
+						.header__buttons--reg
+							+button("зарегистрироваться", "button-dark", "#")
