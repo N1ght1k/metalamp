@@ -130,13 +130,32 @@ body {
       -webkit-mask-composite: destination-out;
       mask-composite: exclude; }
 
-.copyright-container {
-  display: flex;
-  justify-content: space-between; }
+.copyright {
+  max-width: 1440px;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin-top: 1px; }
+  .copyright-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 140px;
+    height: 70px; }
 
 .copyright__text {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75); }
+
+.footer-creative {
+  width: 768px;
+  height: 367px;
+  margin: auto; }
+  .footer-creative-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 104px; }
 
 .footer__container {
   margin: auto;
@@ -248,9 +267,16 @@ body {
     height: 12.95px;
     padding-left: 12.5px; }
 
-.icon {
-  font-family: "Font Awesome 5 Brands Regular";
-  font-size: 24px; }
+.icon-bar {
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 24px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 0 -10px;
+  display: flex; }
+  .icon-bar__item {
+    margin: 0 10px; }
 
 .menu-ext {
   display: flex;
