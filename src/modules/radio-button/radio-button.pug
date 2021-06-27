@@ -1,4 +1,4 @@
-mixin radio-button
+mixin radio-button(id, name, text, checked)
 	.radio
-		input(type="radio" name="rb" id="rb1") 
-		label(for="rb1") Переключатель 1
+		input.radio__input(type="radio" name=name id=id checked=checked) 
+		label.radio__label(for=id) #{text}
