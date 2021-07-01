@@ -1,6 +1,6 @@
-mixin button(type, text, mod, link)
+mixin button(submit, text, mod, link)
 	.button-common
-		if type == 'submit'
+		if type == true
 			button(type='submit' class='button__common button__common--' + mod) #{text}
 		else 
 			a(class='button__common button__common--' + mod href=link) #{text}

@@ -16,6 +16,7 @@
 		background-color: #FFFFFF;
 		user-select: none;
 		cursor: pointer;
+		width: 100%;
 
 		&--default {
 			color: #BC9CFF;
@@ -36,18 +37,25 @@
 				-webkit-mask-composite: destination-out; 
 				mask-composite: exclude; 
 			}
+
+			&:hover {
+				opacity: 0.5;
+			}
 		}
 
 
 		&--dark {
 			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 			color: #FFFFFF;
+
+			&:hover {
+				opacity: 0.5;
+			}
 		}
 
 		&--big {
 			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 			color: #FFFFFF;
-			width: 100%;
 
 			&::after {
 				position: absolute;
