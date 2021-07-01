@@ -1,0 +1,43 @@
+include ../text-field/text-field
+include ../radio-button/radio-button
+include ../toggle-button/toggle-button
+include ../button/button
+
+mixin form-reg
+	form.form-reg
+		.form-reg__content
+			.form-reg__header 
+				h1 Регистрация аккаунта
+			.form-reg__section
+				.form-reg__item 
+					+text-field("name", "Имя")
+				.form-reg__item 
+					+text-field("surname", "Фамилия")
+				.form-reg__item--radio
+					.form-reg__radio-button
+						+radio-button("male", "sex", "Мужчина", true)
+					.form-reg__radio-button
+						+radio-button("female", "sex", "Женщина", false)
+			.form-reg__section
+				.form-reg__item--header
+					h3 дата рождения
+				.form-reg__item
+					+text-field("birthday", "ДД.ММ.ГГГГ")
+			.form-reg__section
+				.form-reg__item--header
+					h3 данные для входа в сервис
+				.form-reg__item
+					+text-field("email", "Email")
+				.form-reg__item
+					+text-field("pass", "Пароль")
+				.form-reg__item--toggle
+					+toggle-button("pass", "pass", "Получать спецпредложения", false)
+			.form-reg__payment
+				+button(true, "перейти к оплате", "big")
+			.form-reg__footer
+				.form-reg__account
+					p Уже есть аккаунт на Toxin
+				.form-reg__enter
+					+button(false, "войти", "default")
+
+
