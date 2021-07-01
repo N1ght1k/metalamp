@@ -1,0 +1,20 @@
+include ../text-field/text-field
+include ../button/button
+
+mixin form-enter
+	form.form-enter
+		.form-enter__content
+			.form-enter__header 
+				h1 Войти
+			.form-enter__section
+				.form-enter__item
+					+text-field("email", "Email")
+				.form-enter__item
+					+text-field("pass", "Пароль")
+			.form-enter__enter
+				+button(true, "войти", "big")
+			.form-enter__footer
+				.form-enter__account
+					p Нет аккаунта на Toxin?
+				.form-enter__create
+					+button(false, "создать", "default")
