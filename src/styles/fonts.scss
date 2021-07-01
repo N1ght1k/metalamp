@@ -36,10 +36,17 @@
 }
 
 @font-face {
-	font-family: "Montserrat";
+	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 	font-style: normal; 
 	font-weight: normal; 
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: bold; 
 }
 
 @font-face {
