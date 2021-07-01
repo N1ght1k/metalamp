@@ -1,40 +1,94 @@
 .button {
-	position:relative;
-	border-radius:22px; 
-	text-decoration: none; /* убирать подчёркивание у ссылок */
-	user-select: none; /* убирать выделение текста */
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	text-transform: uppercase;
-	padding: 10px 20px;
 
-	&-dark {
-		border-radius:22px; 
-		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-		color: #FFFFFF;
-	}
+	&__common {
+		text-decoration: none;
+		position: relative;
+		border-radius: 22px; 
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		outline: none;
+		border: none;
+		background-color: #FFFFFF;
+		user-select: none;
+		cursor: pointer;
 
-	&-default {
-		color: #BC9CFF;
+		&--default {
+			color: #BC9CFF;
+				
+			&::before {
+				content:"";
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				border-radius:22px; 
+				padding:2px; 
+				background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+				-webkit-mask: 
+					linear-gradient(#fff 0 0) content-box, 
+					linear-gradient(#fff 0 0);
+				-webkit-mask-composite: destination-out; 
+				mask-composite: exclude; 
+			}
+		}
 
-		&::before {
-			content:"";
-			position:absolute;
-			top:0;
-			left:0;
-			right:0;
-			bottom:0;
-			border-radius:22px; 
-			padding:2px; 
-			background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-			-webkit-mask: 
-				linear-gradient(#fff 0 0) content-box, 
-				linear-gradient(#fff 0 0);
-			-webkit-mask-composite: destination-out; 
-			mask-composite: exclude; 
+
+		&--dark {
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			color: #FFFFFF;
+		}
+
+		&--big {
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			color: #FFFFFF;
+			width: 100%;
+
+			&::after {
+				position: absolute;
+				right: 0;
+				width: 44px;
+				text-transform: none;
+				font-style: normal;
+				font-weight: normal;
+				font-family: 'Material Icons';
+				color: #FFFFFF; 
+				font-size: 24px;
+				content: 'arrow_forward';
+			}
 		}
 	}
+
+	// &-dark {
+	// 	border-radius:22px; 
+	// 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	// 	color: #FFFFFF;
+	// }
+
+	// &-default {
+	// 	color: #BC9CFF;
+
+	// 	&::before {
+	// 		content:"";
+	// 		position:absolute;
+	// 		top:0;
+	// 		left:0;
+	// 		right:0;
+	// 		bottom:0;
+	// 		border-radius:22px; 
+	// 		padding:2px; 
+	// 		background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+	// 		-webkit-mask: 
+	// 			linear-gradient(#fff 0 0) content-box, 
+	// 			linear-gradient(#fff 0 0);
+	// 		-webkit-mask-composite: destination-out; 
+	// 		mask-composite: exclude; 
+	// 	}
+	// }
 }
+

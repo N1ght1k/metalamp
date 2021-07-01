@@ -5,6 +5,8 @@ include ../modules/footer-creative/footer-creative
 include ../modules/text-field/text-field
 include ../modules/radio-button/radio-button
 include ../modules/toggle-button/toggle-button
+include ../modules/form-reg/form-reg
+include ../modules/button/button
 
 doctype html
 html(lang="en")
@@ -24,4 +26,6 @@ html(lang="en")
 		+radio-button("id1", "name1", "ololo", true)
 		+radio-button("id2", "name1", "ololo2", false)
 		+toggle-button
+		+form-reg
+		+button("submit", "войти", "big")
 
