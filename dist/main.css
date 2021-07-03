@@ -254,7 +254,7 @@ h3 {
     align-items: center; }
   .form-enter__account {
     color: #000000; }
-  .form-enter__enter {
+  .form-enter__create {
     width: 99px;
     height: 44px; }
 
@@ -406,13 +406,14 @@ h3 {
 .icon-bar {
   font-family: 'Font Awesome 5 Brands';
   font-size: 24px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  color: transparent;
-  -webkit-background-clip: text;
   margin: 0 -10px;
   display: flex; }
   .icon-bar__item {
     margin: 0 10px; }
+  .icon-bar .fab {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .menu-ext {
   display: flex;
@@ -425,12 +426,7 @@ h3 {
     height: 18px; }
   .menu-ext__column-header {
     margin-top: 4px;
-    margin-bottom: 21px;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #1F2041; }
+    margin-bottom: 21px; }
   .menu-ext__text {
     margin-top: 20px;
     line-height: 24px;
