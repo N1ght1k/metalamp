@@ -2,7 +2,8 @@ include ../logo/logo
 include ../input/input
 
 mixin add_footer_menu(header, items)
-	.menu-ext__column-header #{header}
+	.menu-ext__column-header 
+		h3 #{header}
 	ul.menu-ext__list
 		each item in items 
 			li.menu-ext__list-item 
@@ -27,7 +28,8 @@ mixin menu-ext
 				+add_footer_menu("служба поддержки", ["Соглашения", "Сообщества", "Связь с нами"])
 		.menu-ext__corner-column
 			.menu-ext__corner-column--subscribe
-				.menu-ext__column-header подписка
+				.menu-ext__column-header 
+					h3 подписка
 				.menu-ext__text
 					p Получайте специальные предложения и новости сервиса
 				.menu-ext__input
