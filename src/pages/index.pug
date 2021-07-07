@@ -8,6 +8,7 @@ include ../modules/toggle-button/toggle-button
 include ../modules/form-reg/form-reg
 include ../modules/button/button
 include ../modules/form-enter/form-enter
+include ../modules/like-button/like-button
 
 doctype html
 html(lang="en")
@@ -15,8 +16,15 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		link(rel="stylesheet", href="style.css")
 		link(rel="stylesheet", href="fontawesome.css")
+		//- link(rel="stylesheet", href="daterangepicker.css")
+		//- <script type="text/javascript" src="daterangepicker.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+		//- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		//- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		//- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+		link(href="dist/css/datepicker.min.css", rel="stylesheet", type="text/css")
+		<script src="dist/js/datepicker.min.js"></script>
 		title Document
 	body 
 		+header(false)
@@ -29,4 +37,11 @@ html(lang="en")
 		+toggle-button
 		+form-reg
 		+form-enter
-
+		//- +text-field("datepicker-here", "datepicker-here", "datepicker-here")
+		//- +text-field("search_checkout", "search_checkout", "search_checkout")
+		//- script
+		//- 	include script.js
+		input(type='text' id="ololo2")
+		script
+			include script1.js
+		+like-button

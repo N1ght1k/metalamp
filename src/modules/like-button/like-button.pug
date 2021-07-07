@@ -1,0 +1,9 @@
+mixin like-button
+	button(class="like-button")
+		span(class="like-button__icon") favorite_border
+		//- span(class="like-button__icon like-button__icon--liked") favorite
+		//- 	span(class="fa fa-heart")
+		//- span(class="btn-content  btn-content--liked") Liked
+		span(class="like-button__content") 2
+	script
+		include like-button.js
