@@ -1,0 +1,9 @@
+mixin rate-button(count)
+	.rate-button
+		- var rate = 0
+		- for(var i = 0; i < 5; i++) 
+			if rate < count
+				span(class="rate-button__star") star
+				- rate++
+			else
+				span(class="rate-button__star") star_border

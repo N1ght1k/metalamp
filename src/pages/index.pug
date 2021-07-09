@@ -9,6 +9,7 @@ include ../modules/form-reg/form-reg
 include ../modules/button/button
 include ../modules/form-enter/form-enter
 include ../modules/like-button/like-button
+include ../modules/rate-button/rate-button
 
 doctype html
 html(lang="en")
@@ -41,7 +42,8 @@ html(lang="en")
 		//- +text-field("search_checkout", "search_checkout", "search_checkout")
 		//- script
 		//- 	include script.js
-		input(type='text' id="ololo2")
-		script
-			include script1.js
-		+like-button
+		//- input(type='text' id="ololo2")
+		//- script
+		//- 	include script1.js
+		//- +like-button
+		+rate-button(3)
