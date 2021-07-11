@@ -1,0 +1,4 @@
+mixin checkbox-button(id, name, text, checked)
+	.checkbox-button
+		input.checkbox-button__icon(type="checkbox" name=name id=id checked=checked) 
+		label.checkbox-button__content(for=id) #{text}
