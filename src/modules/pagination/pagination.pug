@@ -1,0 +1,17 @@
+mixin pagination
+	.pagination 
+		.pagination__content
+			.pagination__item.pagination__item--current
+				span.pagination__page 1
+			.pagination__item
+				span.pagination__page 2
+			.pagination__item
+				span.pagination__page 3
+			.pagination__item
+				span.pagination__page ...
+			.pagination__item
+				span.pagination__page 15
+			.pagination__item.pagination__item--button
+				a(class="pagination__button" href="#") arrow_forward
+		.pagination__text
+			p 1 – 12 из 100+ вариантов аренды
