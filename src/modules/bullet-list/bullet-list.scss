@@ -1,0 +1,24 @@
+.bullet-list {
+	display: block;
+	margin: -5px 0 -5px 20px;
+	max-width: 240px;
+
+	&__item {
+		display: block;
+		position: relative;
+		line-height: 24px;
+		margin: 5px 0;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0.5em;
+			left: -20px;
+			//margin-top: -.9em;
+			background: rgba(31, 32, 65, 0.25);
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+		}
+	}
+}

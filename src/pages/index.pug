@@ -12,6 +12,7 @@ include ../modules/like-button/like-button
 include ../modules/rate-button/rate-button
 include ../modules/checkbox-button/checkbox-button
 include ../modules/pagination/pagination
+include ../modules/bullet-list/bullet-list
 
 doctype html
 html(lang="en")
@@ -53,3 +54,4 @@ html(lang="en")
 		+checkbox-button("id6", "name5", "Можно пригласить гостей (до 10 человек)", false)
 		+checkbox-button("id7", "name5", "Можно пригласить гостей (до 10 человек)", false)
 		+pagination
+		+bullet-list(["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"])
