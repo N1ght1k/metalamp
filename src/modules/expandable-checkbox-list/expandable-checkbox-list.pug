@@ -1,0 +1,12 @@
+nclude ../checkbox-button/checkbox-button
+
+mixin expandable-checkbox-list(name, values)
+	.expandable-checkbox-list
+		p.expandable-checkbox-list__title lala
+		ul.expandable-checkbox-list__content
+			each value in values
+				li.expandable-checkbox-list__item 
+					+checkbox-button(value.id, name, value.text, value.checked, "default")
+	script
+		include expandable-checkbox-list.js
+

@@ -1,0 +1,33 @@
+.expandable-checkbox-list {
+	&__content {
+		margin: -10px 0;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+
+		&--active {
+			&::after {
+				transform: rotate(180deg);
+			}
+		}
+
+		&::after {
+			font-family: 'Material Icons';
+			color: rgba(31, 32, 65, 0.5);
+			font-size: 24px;
+			content: "expand_more";
+			margin-left: 30px;
+		}
+	}
+
+	&__item {
+		margin: 10px 0;
+	}
+}
