@@ -1,0 +1,6 @@
+include ../checkbox-button/checkbox-button
+
+mixin rich-checkbox(id, name, title, description, checked, mod)
+	.rich-checkbox
+		+checkbox-button(id, name, title, checked, mod)
+		p.rich-checkbox__description #{description}

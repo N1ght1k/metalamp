@@ -13,6 +13,7 @@ include ../modules/rate-button/rate-button
 include ../modules/checkbox-button/checkbox-button
 include ../modules/pagination/pagination
 include ../modules/bullet-list/bullet-list
+include ../modules/rich-checkbox/rich-checkbox
 
 doctype html
 html(lang="en")
@@ -50,8 +51,10 @@ html(lang="en")
 		//- 	include script1.js
 		//- +like-button
 		+rate-button(3)
-		+checkbox-button("id5", "name5", "Можно пригласить гостей (до 10 человек)", false)
-		+checkbox-button("id6", "name5", "Можно пригласить гостей (до 10 человек)", false)
-		+checkbox-button("id7", "name5", "Можно пригласить гостей (до 10 человек)", false)
+		+checkbox-button("id5", "name5", "Можно пригласить гостей (до 10 человек)", false, "default")
+		+checkbox-button("id6", "name5", "Можно пригласить гостей (до 10 человек)", false, "default")
+		+checkbox-button("id7", "name5", "Можно пригласить гостей (до 10 человек)", false, "default")
 		+pagination
 		+bullet-list(["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"])
+		+rich-checkbox("id78", "name8", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.", false, "rich")
+		+rich-checkbox("id79", "name8", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.", false, "rich")
